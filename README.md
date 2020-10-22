@@ -23,9 +23,10 @@ Provide the ability to log into the panel using the user credentials.
 Request Data: { 'username': str, 'password': str }
 
 Response Data: { 'status': 'success', 'userId': int }
+
 ***Curl command to test user login:***
 
-curl -H 'Content-Type: application/json' -d '{"username": "<anyusername>","password":"<anypassword>"}' -X POST http://127.0.0.1:8000/notesapp/auth
+curl -H 'Content-Type: application/json' -d '{"username": "<anyusername>","password":"<anypassword>"}' -X POST http://127.0.0.1:8000/notesapp/auth.
   
 ## List Saved Notes:
 Provide list of stored notes for the logged-in user
